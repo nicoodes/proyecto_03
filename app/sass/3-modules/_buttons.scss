@@ -1,0 +1,36 @@
+.btn {
+	display: block;
+	font-size: $x-small;
+	font-weight: 400;
+	color: $main-1;
+	border: 2px solid $main-1;
+	border-radius: 50%;
+	padding: 1.43em 2.14em;
+	transition: 0.4s;
+
+	&:hover {
+		color: #fff;
+		background-color: $main-1;
+	}
+}
+
+.btn__header {
+	color: #fff;
+	border: 2px solid #fff;
+
+	&:hover {
+		color: $main-1;
+		background-color: #fff;
+	}
+}
+
+.btn__order {
+	color: $txt-2;
+	border: 2px solid $main-1;
+
+	&:hover {
+		color: #fff;
+		background-color: $main-1;
+	}
+}
+

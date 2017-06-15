@@ -1,0 +1,66 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FFF;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: 500;
+}
+
+h1, h2, h6 {
+	color: $txt-1;
+}
+
+h3, h4, h5 {
+	color: $txt-2;
+}
+
+h3 span, h4 span {
+	color: $main-1;
+}
+
+h1 {
+	// font family jack frost
+	font-size: $x-small;
+}
+
+h2 {
+	font-size: $x-large;
+}
+
+h3 {
+	font-size: $large;
+}
+
+h4 {
+	font-size: $medium;
+}
+
+h5 {
+	font-size: $small;
+}
+
+h6 {
+	font-size: $x-small;
+}
+
+p {
+	font-size: $xx-small;
+	font-weight: 300;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
