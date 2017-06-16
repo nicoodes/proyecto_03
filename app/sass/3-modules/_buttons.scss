@@ -4,8 +4,11 @@
 	font-weight: 400;
 	color: $main-1;
 	border: 2px solid $main-1;
-	border-radius: 50%;
-	padding: 1.43em 2.14em;
+	border-radius: 50px;
+	width: 180px;
+	height: 60px;
+	line-height: 55px;
+	text-align: center;
 	transition: 0.4s;
 
 	&:hover {
