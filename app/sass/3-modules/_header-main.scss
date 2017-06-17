@@ -1,0 +1,34 @@
+.header-main {
+	background: $main-2 url(../img/waves.png) no-repeat 50% 110%;
+	padding-bottom: 180px;
+}
+
+.header-main__navegation {
+	display: flex;
+	height: 100px;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+
+
+	h1 {
+		@media screen and (max-width:800px) {
+			font-size: $large;
+		}
+	}
+}
+
+.header-main__content {
+	margin-top: 100px;
+	text-align: center;
+	color: #fff;
+
+	p {
+		width: 70%;
+		margin: 30px auto 45px;
+	}
+
+	a {
+		margin: 0 auto;
+	}
+}

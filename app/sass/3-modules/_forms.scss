@@ -1,0 +1,45 @@
+.search-form {
+	width: 300px;
+	border: 1px solid lighten($main-2, 20%);
+	border-radius: 2px;
+	color: #fff;
+	display: flex;
+
+	@media screen and (max-width:800px) {
+		width: 80%;
+	}
+
+	input {
+		flex: 3;
+		padding: 10px 0 10px 35px;
+		background-color: lighten($main-2, 2%);
+		margin: 0;
+		color: inherit;
+
+		&::placeholder {
+			color: #fff;
+			font-weight: 200;
+			font-family: "Montserrat";
+			letter-spacing: 0.5px;
+		}
+	}
+
+	button {
+		flex: 1;
+		background-color: lighten($main-2, 2%);
+		cursor: pointer;
+		color: #fff;
+		transition: 0.5s;
+
+		i {
+			color: inherit;
+			font-size: 18px;
+
+		}
+		
+		&:hover {
+			background-color: lighten($main-2, 7%);
+			color: $txt-active;
+		}
+	}
+}
