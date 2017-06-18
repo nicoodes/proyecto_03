@@ -1,0 +1,10 @@
+.footer-main {
+	background-color: $main-2;
+	padding: 75px;
+}
+
+.footer-main__container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}

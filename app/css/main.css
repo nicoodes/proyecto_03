@@ -483,6 +483,10 @@ input, button {
           -ms-flex-direction: column-reverse;
               flex-direction: column-reverse; } }
 
+.empty {
+  background-color: pink;
+  height: 200px; }
+
 /* MODULES */
 .para-txt {
   margin: 40px 0; }
@@ -663,6 +667,42 @@ input, button {
       border: 1px solid #0082e5;
       padding: 20px; } }
 
+.footer__nav {
+  padding: 30px; }
+  .footer__nav h6 {
+    font-weight: 400;
+    letter-spacing: 1.5px; }
+  .footer__nav__item {
+    margin-top: 15px; }
+    .footer__nav__item a {
+      color: #fff;
+      font-weight: 300;
+      font-size: 14px;
+      letter-spacing: 1px;
+      -webkit-transition: all 0.4s;
+      transition: all 0.4s; }
+      .footer__nav__item a:hover {
+        color: #3a3a3a;
+        font-weight: 700; }
+  .footer__nav__social {
+    display: inline-block;
+    margin: 30px 10px 0; }
+    .footer__nav__social i {
+      color: #fff;
+      font-size: 24px;
+      border: 1px solid #fff;
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      padding: 10px;
+      -webkit-transition: all 0.6s;
+      transition: all 0.6s; }
+      .footer__nav__social i:hover {
+        color: #078ff7;
+        background-color: #FFF;
+        -webkit-transform: scale(1.25);
+                transform: scale(1.25); }
+
 .search-form {
   width: 300px;
   border: 1px solid #69bcfb;
@@ -808,6 +848,14 @@ input, button {
           -ms-flex-direction: column;
               flex-direction: column; } }
 
+.column-33 {
+  width: 33%; }
+
+.column-25 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%; }
+
 .line, .line-o {
   display: block;
   content: "";
@@ -878,3 +926,24 @@ input, button {
           transform: scale(1.5);
   background-color: #0891f9;
   cursor: pointer; }
+
+.footer-main {
+  background-color: #078ff7;
+  padding: 75px; }
+
+.footer-main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.footer-bottom {
+  background-color: #0082e5;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 400; }
