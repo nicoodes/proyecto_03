@@ -32,32 +32,7 @@
 	position: relative;
 }
 
-.slider__arrows-up {
-	width: 170px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	transform: rotate(-90deg);
-	position: absolute;
-	left:-120px;
-	top: 250px;
 
-	@media screen and (max-width: 850px) {
-		display: none;
-	}
-	p {
-		font-size: $x-small;
-	}
-
-	i {
-		font-size: $medium;
-		&:hover {
-			font-weight: 700;
-			cursor: pointer;
-			transform: scale(1.25);
-		}
-	}
-}
 
 .global__slider-box {
 	width: 470px;

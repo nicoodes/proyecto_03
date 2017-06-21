@@ -1,0 +1,40 @@
+.slider__arrows {
+	width: 170px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+
+	p {
+		font-size: $x-small;
+	}
+
+	i {
+		font-size: $medium;
+		&:hover {
+			font-weight: 700;
+			cursor: pointer;
+			transform: scale(1.25);
+		}
+	}
+}
+
+.slider__arrows--up {
+	
+	transform: rotate(-90deg);
+	left:-120px;
+	top: 250px;
+
+	@media screen and (max-width: 850px) {
+		display: none;
+	}
+}
+
+.slider__arrows--hor {
+	
+
+
+	@media screen and (max-width: 850px) {
+		
+	}
+}

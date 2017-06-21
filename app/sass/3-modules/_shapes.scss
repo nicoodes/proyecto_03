@@ -80,3 +80,21 @@
 	background-color: $main-1;
 	cursor: pointer;
 }
+
+.rectangle {
+	width: 120px;
+	height: 12px;
+	display: block;
+	background-color: $main-1;
+	position: absolute;
+}
+
+.rectangle--top {
+	top: -12px;
+	left: 55%;
+}
+
+.rectangle--bott {
+	top: 100%;
+	left: 55%;
+}
