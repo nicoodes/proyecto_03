@@ -1,0 +1,33 @@
+.clients {
+	padding: 75px 0;
+	text-align: center;
+}
+
+.clients__logos {
+	display: flex;
+	margin-top: 40px;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	&-box {
+		flex: 1 1 250px;
+		max-width: 250px;
+		margin: 20px 15px 0;
+		box-shadow: 0 0 20px 0 $txt-active;
+		padding: 35px;
+		border-radius: 5px;
+
+		img {
+			width: 100%;
+		}
+
+		&:nth-child(3) img {
+			transform:scale(1.25);
+		}
+
+		&:hover {
+			box-shadow: 0 0 20px 0 $main-1;
+			cursor: pointer;
+		}	
+	}
+}
