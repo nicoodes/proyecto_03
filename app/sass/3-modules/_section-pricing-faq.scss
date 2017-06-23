@@ -1,0 +1,30 @@
+.faq {
+	padding: 75px 0;
+	text-align: center;
+	background: $bg-2 url("../img/a.png") no-repeat center;
+	.para-txt {
+		margin: 20px 0 50px;
+		font-weight: 400;
+		font-size: $xxx-small;
+		line-height: 2.25;
+	}
+
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		text-align: left;
+
+		@media screen and (max-width: 700px) {
+			justify-content: center;
+		}
+	}
+}
+
+.questions {
+	flex: 0 1 45%;
+	padding: 0 0 0 0;
+	@media screen and (max-width: 700px) {
+		flex: 0 1 80%;
+	}
+}
