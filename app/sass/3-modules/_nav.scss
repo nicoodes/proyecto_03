@@ -7,6 +7,19 @@
 	@media screen and (max-width:800px) {
 			display: none;
 			background-color: $main-3;
+			position: absolute;
+			flex-direction: column;
+			top: 10px;
+			right: 45px;
+			width: 80%;
+			&__item {
+				a {
+					border: 1px solid $main-3;
+					padding: 15px;
+				}
+			}
+		/////////////////agregue aca//////////////////
+			
 		}
 
 	&__item {
@@ -29,6 +42,7 @@
 		&:hover {
 			color: $txt-active;
 		}
+
 		@media screen and (max-width:800px) {
 			display: inline-block;
 		}
@@ -42,29 +56,21 @@
 	border-radius: 3px;
 }
 
-@media screen and (max-width:800px) {
-	nav:hover {
-		.main-nav {
-			display: block;
-			position: absolute;
-			flex-direction: column;
-			top: 70px;
-			right: 0;
-			width: 100%;
-
-			&__item {
-				a {
-					border: 1px solid $main-3;
-					padding: 20px;
-				}
-			}
-		}
-	}
+.menu-show {
+		@media screen and (max-width: 800px) {
+			display: flex;
+		}	
+				
 }
-
 
 .footer__nav {
 	padding: 30px;
+	min-width: 200px;
+
+	&--social {
+		padding-right: 5px;
+		min-width: 250px;
+	}
 
 	h6 {
 		font-weight: 400;
@@ -110,3 +116,4 @@
 		}
 	}
 }
+

@@ -42,9 +42,9 @@
 						<h1>ceatr</h1>
 						<nav>
 							<span class="main-nav__close">
-								<i class="fa fa-bars" aria-hidden="true"></i>
+								<i id="menu" class="fa fa-bars" aria-hidden="true"></i>
 							</span>	
-							<ul class="main-nav">
+							<ul class="main-nav" id="mainNav">
 								<li class="main-nav__item"><a href="index.html">Home</a></li>
 								<li class="main-nav__item"><a href="about-us.html">About us</a></li>
 								<li class="main-nav__item"><a href="pricing.html">Pricing</a></li>
@@ -55,7 +55,7 @@
 						</nav>
 					</div>
 					<div class="header-main__content">
-						<h2>Contact Us</h2>
+						<h2>Feel free to contact us</h2>
 						<p class="para-txt">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore  consequat. Duis aute irure dolor in reprehenderit in volExcepteur.
 						</p>
@@ -65,7 +65,41 @@
 				</div>
 		</header>
 		
-		<section class="empty">
+		<section class="contact">
+			<div class="container">
+				<div class="contact__content">
+					<div class="contact__content-item">
+						<i class="fa fa-phone"></i>
+						<p>+88 123 456 7890</p>
+						<p>+88 018 488 1669</p>
+					</div>
+					<div class="contact__content-item">
+						<i class="fa fa-envelope-o"></i>
+						<p>your_name@email.com</p>
+						<p>info@email.com</p>
+					</div>
+					<div class="contact__content-item">
+						<i class="fa fa-map-marker"></i>
+						<p>25 Green Tower, Street Name</p>
+						<p>New Yprk City, USA</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-form">
+			<div class="contact-form__content">
+				<form action="" class="main-form">
+					<input class="main-form__item" type="name" placeholder="Enter your name">
+					<input class="main-form__item" type="email" placeholder="Enter your email">
+					<input class="main-form__item" type="text" placeholder="Subject">
+					<textarea class="main-form__item" name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+					<input class="btn" type="submit" value="Send">
+				</form>
+			</div>
+		</section>
+
+		<section class="contact-map" id="map">
 			
 		</section>
 
@@ -107,7 +141,7 @@
 						</div>
 					</div>
 					<div class="column-25">
-						<div class="footer__nav">
+						<div class="footer__nav footer__nav--social">
 							<h6>Get connected</h6>
 							<ul>
 								<li class="footer__nav__social"><a href="https://www.facebook.com/"  target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -123,6 +157,8 @@
 				<p>&copy;projectName 2016 Ibrahim Emran</p>
 			</div>
 		</footer>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJgw2fHuJAWRhyKezoPF0K67RvtElLZE0&callback=initMap"
+    async defer></script>
 		<script src="js/scripts.min.js"></script>
 	</body>
 </html>

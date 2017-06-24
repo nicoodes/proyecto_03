@@ -1,0 +1,30 @@
+.contact {
+	padding: 40px 0;
+	text-align: center;
+
+	&__content{
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
+
+		&-item {
+			padding: 20px 5px;
+			flex: 0 1 230px;
+			// min-width: 230px;
+			display: flex;
+			flex-direction: column;
+			.fa {
+				color: $main-1;
+				font-size: $large;
+				margin: 0 10px 10px;
+			}
+
+			@media screen and (max-width: 768px) {
+				flex: 0 1 100%;
+				padding: 10px 0;
+				
+			}
+		}
+	}
+}

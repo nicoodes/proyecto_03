@@ -1,0 +1,9 @@
+.contact-form {
+	padding: 75px 30px;
+	background-color: $bg-2;
+	box-shadow: 0 6px 20px -5px black;
+	&__content {
+		max-width: 800px;;
+		margin: 0 auto;
+	}	
+}
