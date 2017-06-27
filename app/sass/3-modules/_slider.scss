@@ -26,7 +26,11 @@
 	top: 250px;
 
 	@media screen and (max-width: 850px) {
-		display: none;
+		// display: none;
+		top: 72%;
+		left: 30%;
+		transform: none;
+		height: 50px;
 	}
 }
 

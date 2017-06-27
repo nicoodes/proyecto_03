@@ -74,11 +74,11 @@
 .circle__slider {
 }
 
-.circle__slider:hover,
+// .circle__slider:hover,
 .circle__slider--active {
-	transform: scale(1.5);
+	transform: scale(2);
 	background-color: $main-1;
-	cursor: pointer;
+	// cursor: pointer;
 }
 
 .rectangle {

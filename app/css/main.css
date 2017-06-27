@@ -1032,12 +1032,10 @@ input, button {
     -webkit-transform: scale(1.5);
             transform: scale(1.5); }
 
-.circle__slider:hover,
 .circle__slider--active {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-  background-color: #0891f9;
-  cursor: pointer; }
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  background-color: #0891f9; }
 
 .rectangle {
   width: 120px;
@@ -1083,7 +1081,11 @@ input, button {
   top: 250px; }
   @media screen and (max-width: 850px) {
     .slider__arrows--up {
-      display: none; } }
+      top: 72%;
+      left: 30%;
+      -webkit-transform: none;
+              transform: none;
+      height: 50px; } }
 
 .services__header p {
   font-weight: 500; }
