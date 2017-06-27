@@ -53,7 +53,7 @@ window.addEventListener("resize", resize);
 ///////////////////
 // Slider Global //
 ///////////////////
-images = [
+var images = [
     "img/globe.png",
     "img/globe2.png",
     "img/globe3.png",
@@ -61,13 +61,13 @@ images = [
     "img/globe5.png"
 ];
 
-globeCount = 0;
+var globeCount = 0;
 
-globeImage = document.getElementById("globeSlider");
-globeNext = document.getElementById("globeNext");
-globePrev = document.getElementById("globePrev");
-globeP = document.getElementById("globeP");
-globeH = document.getElementById("globeH");
+var globeImage = document.getElementById("globeSlider");
+var globeNext = document.getElementById("globeNext");
+var globePrev = document.getElementById("globePrev");
+var globeP = document.getElementById("globeP");
+var globeH = document.getElementById("globeH");
 
 function goNext() {
 
@@ -120,3 +120,65 @@ function goPrev() {
 
 globeNext.addEventListener("click", goNext);
 globePrev.addEventListener("click", goPrev);
+
+
+
+/////////////////////////
+// Slider Testimonials //
+/////////////////////////
+
+
+var opinionCount = 0;
+var opinionOn = document.getElementsByClassName("opinion-on");
+var opinionP = document.getElementById("opinionP");
+
+function goNextOpinion() {
+
+  if (opinionCount < 4) {
+    
+    opinionCount++;
+    opinionP.innerHTML = "0"+(opinionCount + 1)+" / 05";
+    document.getElementsByClassName("circle__slider2--active")[0].className = "circle circle__slider2";
+    document.getElementById("circle0"+(opinionCount+1)).className = "circle circle__slider2--active";
+    // console.log(document.getElementsByClassName("circle__slider2")[opinionCount]);
+   // console.log("circle0"+(opinionCount+1));
+  } else {
+      opinionCount = 0;
+      opinionP.innerHTML = "0"+(opinionCount + 1)+" / 05";
+      
+      document.getElementsByClassName("circle__slider2--active")[0].className = "circle circle__slider2";
+      document.getElementById("circle0"+(opinionCount+1)).className = "circle circle__slider2--active";
+    }
+
+  opinionOn[0].className = "opinion";
+  document.getElementById("opinion"+(opinionCount+1)).className = "opinion-on";
+
+}
+
+function goPrevOpinion() {
+
+  if (opinionCount > 0) {
+    
+    opinionCount--;
+    
+    opinionP.innerHTML = "0"+(opinionCount + 1)+" / 05";
+    
+    document.getElementsByClassName("circle__slider2--active")[0].className = "circle circle__slider2";
+    document.getElementById("circle0"+(opinionCount+1)).className = "circle circle__slider2--active";
+
+  } else {
+
+    opinionCount = 4;
+    
+    opinionP.innerHTML = "0"+(opinionCount + 1)+" / 05";
+    
+    document.getElementsByClassName("circle__slider2--active")[0].className = "circle circle__slider2";
+    document.getElementById("circle0"+(opinionCount+1)).className = "circle circle__slider2--active";
+  }
+  opinionOn[0].className = "opinion";
+  document.getElementById("opinion"+(opinionCount+1)).className = "opinion-on";
+}
+
+
+opinionNext.addEventListener("click", goNextOpinion);
+opinionPrev.addEventListener("click", goPrevOpinion);

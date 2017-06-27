@@ -6,6 +6,8 @@
 		height: 50px;
 		padding-top: 20px;
 
+
+
 		
 	}
 	.header-main__content {
@@ -16,13 +18,28 @@
 		height: 70vh;
 		justify-content: center;
 
+		@media screen and (max-width: 450px) {
+			margin-top: 20px;
+		}
+
 		p {
 			margin: 10px auto 30px;
 		}
+
+		a {
+			display: inline-block;
+			margin: 10px;
+		}
+
+
 	}
 }
 
 
 .txt-404 {
 	font-size: 90px;
+
+	@media screen and (max-width: 450px) {
+		font-size: 70px;
+	}
 }
