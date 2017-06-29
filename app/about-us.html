@@ -75,7 +75,7 @@
 				</div>
 			</div>
 		</section>
-
+		
 		<section class="ly-portfolio">
 		<div class="portfolio">
 			<div class="container portfolio__container">
@@ -85,20 +85,27 @@
 					<li><a href="#">Development</a></li>
 					<li><a href="#">Print design</a></li>
 				</ul>
+				<div class="slider__arrows slider__arrows--hor">
+					<i id="portfPrev" class="fa fa-angle-left"></i>
+					<i id="portfNext" class="fa fa-angle-right"></i>
+					<p id="portfP">01 / 07</p>
+				</div>
 				<div class="portfolio__slider">
 					<div class="slider__box">
-						<img src="img/medium.jpg" alt="Design">
-						<p>Crazy app design<span>15 Dec 2016</span></p>
+						<img id="portfSlider" src="img/medium.jpg" alt="Design">
+						<p id="portfH">Crazy app design<span>15 Dec 2016</span></p>
 					</div>
 					<div class="slider__circles">
 						<span class="circle circle__shadow"></span>
-						<span class="circle circle__slider"></span>
-						<span class="circle circle__slider--active"></span>
-						<span class="circle circle__slider"></span>
-						<span class="circle circle__slider"></span>
-						<span class="circle circle__slider"></span>
+						<span id="circle1" class="circle circle__slider--active"></span>
+						<span id="circle2" class="circle circle__slider"></span>
+						<span id="circle3" class="circle circle__slider"></span>
+						<span id="circle4" class="circle circle__slider"></span>
+						<span id="circle5" class="circle circle__slider"></span>
+						<span id="circle6" class="circle circle__slider"></span>
+						<span id="circle7" class="circle circle__slider"></span>
 					</div>
-					<a href="#" class="btn">Full view</a>
+					<span id="open-modal" class="btn">Full view</span>
 				</div>
 				
 				<div class="portfolio__images">
@@ -113,6 +120,20 @@
 				
 		</div>	
 		</section>
+
+
+		<div class="modal" id="modal">
+			<div class="modal-bg" id="modalBg"></div>
+			<div class="modal-content">
+				
+				<i class="fa fa-window-close" id="close-modal"></i>
+				<img id="modalImg" src="img/medium.jpg" alt="">
+				
+				<i id="modalPrev" class="fa fa-angle-left"></i>
+				<i id="modalNext" class="fa fa-angle-right"></i>
+			</div>
+		</div>
+
 
 		<section class="hello">
 			<div class="container">
@@ -180,5 +201,6 @@
 			</div>
 		</footer>
 		<script src="js/scripts.min.js"></script>
+		<script src="js/slider-about-us.min.js"></script>
 	</body>
 </html>

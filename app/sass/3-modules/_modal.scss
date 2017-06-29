@@ -1,0 +1,70 @@
+.modal {
+	display: none;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:999;
+	
+	&-on {
+		display: block;
+	}
+
+	&-bg {
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0,0,0,0.9);
+		
+	}
+
+	&-content {
+		width: 80%;
+		max-width: 800px;
+		position: relative;
+		// top: 2%;
+		// left: 10%;
+		margin: 2% auto 0;
+		img {
+			width: 100%;
+		}
+		.fa-window-close {
+			font-size: 25px;
+			position: absolute;
+			top: 15px;
+			left: calc(100% - 40px);
+			cursor: pointer;
+			transition: 0.4s;
+			color: $txt-active;
+			&:hover {
+				color: #b30000;
+				transform: scale(1.25);
+			}
+		}
+
+		.fa-angle-left,
+		.fa-angle-right {
+			position: absolute;
+			font-size: 80px;
+			top: calc(50% - 40px);
+			transition: 0.4s;
+
+			&:hover {
+				transform: scale(1.25);
+				cursor: pointer;
+			}
+		}
+
+		.fa-angle-right {
+			left: calc(100% - 50px);
+		}
+
+		.fa-angle-left {
+			left: 25px;
+		}
+	}
+}
+

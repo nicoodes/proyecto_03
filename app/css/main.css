@@ -1207,7 +1207,7 @@ input, button {
     display: -ms-flexbox;
     display: flex;
     max-width: 800px;
-    margin: 20px 0 50px; }
+    margin: 20px 0 50px 5px; }
     .testimonials__content-shapes {
       width: 250px;
       display: -webkit-box;
@@ -1220,7 +1220,12 @@ input, button {
               flex-direction: column-reverse;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; }
+              align-items: center;
+      z-index: 99; }
+      @media screen and (max-width: 768px) {
+        .testimonials__content-shapes {
+          width: 40px;
+          margin-right: -40px; } }
       .testimonials__content-shapes .slider__circles {
         position: absolute;
         -webkit-transform: rotate(-90deg);
@@ -1229,12 +1234,22 @@ input, button {
         right: 20%;
         width: 200px;
         height: 20px; }
+        @media screen and (max-width: 768px) {
+          .testimonials__content-shapes .slider__circles {
+            top: 20%;
+            right: -15px; } }
+      @media screen and (max-width: 768px) {
+        .testimonials__content-shapes .slider__arrows--hor {
+          -webkit-transform: rotate(-90deg);
+                  transform: rotate(-90deg);
+          top: 70%; } }
     .testimonials__content-box {
       max-width: 550px;
       position: relative;
       -webkit-box-shadow: 0 0 15px 0 #0891f9;
               box-shadow: 0 0 15px 0 #0891f9;
-      background-color: #fff; }
+      background-color: #fff;
+      z-index: 0; }
       .testimonials__content-box h2 {
         color: #4e4e4e;
         font-weight: 400;
@@ -1403,6 +1418,10 @@ input, button {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
+  .portfolio__container .slider__arrows {
+    position: relative;
+    min-width: 200px;
+    padding: 30px 10px 30px; }
 
 .portfolio {
   background-color: #f7f7f7;
@@ -1411,6 +1430,7 @@ input, button {
     .portfolio {
       padding: 0; } }
   .portfolio__nav {
+    display: none;
     min-width: 250px;
     text-align: right;
     padding: 30px; }
@@ -1455,6 +1475,8 @@ input, button {
         margin-top: 0; }
       .portfolio__slider .slider__circles .circle__shadow {
         margin-right: 20px; }
+    .portfolio__slider .btn {
+      cursor: pointer; }
   .portfolio__images {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1479,7 +1501,8 @@ input, button {
   -webkit-box-shadow: 0 0 15px 0 #3a3a3a;
           box-shadow: 0 0 15px 0 #3a3a3a;
   text-align: center;
-  border-radius: 3px; }
+  border-radius: 3px;
+  width: 400px; }
   .slider__box img {
     width: 100%; }
   .slider__box p {
@@ -1775,3 +1798,57 @@ input, button {
   text-align: center;
   color: #fff;
   font-weight: 400; }
+
+.modal {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999; }
+  .modal-on {
+    display: block; }
+  .modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9); }
+  .modal-content {
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+    margin: 2% auto 0; }
+    .modal-content img {
+      width: 100%; }
+    .modal-content .fa-window-close {
+      font-size: 25px;
+      position: absolute;
+      top: 15px;
+      left: calc(100% - 40px);
+      cursor: pointer;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      color: #3a3a3a; }
+      .modal-content .fa-window-close:hover {
+        color: #b30000;
+        -webkit-transform: scale(1.25);
+                transform: scale(1.25); }
+    .modal-content .fa-angle-left,
+    .modal-content .fa-angle-right {
+      position: absolute;
+      font-size: 80px;
+      top: calc(50% - 40px);
+      -webkit-transition: 0.4s;
+      transition: 0.4s; }
+      .modal-content .fa-angle-left:hover,
+      .modal-content .fa-angle-right:hover {
+        -webkit-transform: scale(1.25);
+                transform: scale(1.25);
+        cursor: pointer; }
+    .modal-content .fa-angle-right {
+      left: calc(100% - 50px); }
+    .modal-content .fa-angle-left {
+      left: 25px; }

@@ -11,6 +11,12 @@
 	@media screen and (max-width: 768px) {
 		flex-direction: column;
 	}
+
+	.slider__arrows {
+		position: relative;
+		min-width: 200px;
+		padding: 30px 10px 30px;
+	}
 }
 
 .portfolio {
@@ -22,6 +28,7 @@
 
 	}
 	&__nav {
+		display: none;
 		min-width: 250px;
 		text-align: right;
 		padding: 30px;
@@ -76,6 +83,10 @@
 				margin-right:20px;
 			}
 		}
+
+		.btn {
+			cursor: pointer;
+		}
 	}
 
 	&__images {
@@ -98,6 +109,7 @@
 	box-shadow: 0 0 15px 0 $txt-active;
 	text-align: center;
 	border-radius: 3px;
+	width: 400px;
 	img {
 		width: 100%;
 	}
