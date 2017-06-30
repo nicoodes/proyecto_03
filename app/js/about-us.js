@@ -1,6 +1,6 @@
-///////////////////
-// Slider Global //
-///////////////////
+////////////
+// Slider //
+////////////
 var images = [
     "img/medium.jpg",
     "img/small-1.jpg",
@@ -93,3 +93,26 @@ portfPrev.addEventListener("click", goPrev);
 modalNext.addEventListener("click", goNext);
 modalPrev.addEventListener("click", goPrev);
 
+
+////////////
+// MODAL ///
+////////////
+
+var modal = document.getElementById("modal");
+var close = document.getElementById("close-modal");
+var open = document.getElementById("open-modal");
+var modalBg = document.getElementById("modalBg");
+
+
+function openModal() {
+  modal.classList.add("modal-on");
+  
+}
+
+function closeModal() {
+  modal.classList.remove("modal-on");
+}
+
+open.addEventListener("click", openModal);
+close.addEventListener("click", closeModal);
+modalBg.addEventListener("click", closeModal);

@@ -14,8 +14,9 @@
 
 	.slider__arrows {
 		position: relative;
-		min-width: 200px;
+		min-width: 180px;
 		padding: 30px 10px 30px;
+		
 	}
 }
 
@@ -71,6 +72,10 @@
 		@media screen and (max-width: 768px) {
 			margin-top: 0px;
 			min-width: 370px;
+
+			.slider__circles {
+				margin: 35px auto 25px!important;
+			}
 		}
 
 		.slider__circles {
@@ -129,7 +134,8 @@
 .portfolio__image {
 	margin: 5px;
 	flex: 1 1 250px;
-	max-width: 350px;
+	max-width: 270px;
+
 	img {
 		width: 100%;
 	}

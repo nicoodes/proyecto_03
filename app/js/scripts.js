@@ -1,20 +1,3 @@
-/////////////////
-//Google maps ///
-/////////////////
-var map;
-var marker;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 51.522458, lng: 0.036780},
-    zoom: 16
-  });
-
-  marker = new google.maps.Marker({
-  	position: {lat: 51.522458, lng: 0.031380},
-  	map: map
-  });
-}
-
 ///////////////
 // Menu bar ///
 ///////////////
@@ -49,26 +32,3 @@ function resize () {
 
 window.addEventListener("resize", resize);
 
-
-////////////
-// MODAL ///
-////////////
-
-var modal = document.getElementById("modal");
-var close = document.getElementById("close-modal");
-var open = document.getElementById("open-modal");
-var modalBg = document.getElementById("modalBg");
-
-
-function openModal() {
-  modal.classList.add("modal-on");
-  
-}
-
-function closeModal() {
-  modal.classList.remove("modal-on");
-}
-
-open.addEventListener("click", openModal);
-close.addEventListener("click", closeModal);
-modalBg.addEventListener("click", closeModal);
