@@ -30,10 +30,11 @@
 	}
 
 	@media screen and (max-width: 450px) {
-		justify-content: space-around;
-		p {
-			font-size: 10px;
-		}
+		display: none;
+		// justify-content: space-around;
+		// p {
+		// 	font-size: 10px;
+		// }
 	}
 }
 
