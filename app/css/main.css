@@ -1432,26 +1432,6 @@ input, button {
   @media screen and (max-width: 768px) {
     .portfolio {
       padding: 0; } }
-  .portfolio__nav {
-    display: none;
-    min-width: 250px;
-    text-align: right;
-    padding: 30px; }
-    @media screen and (max-width: 768px) {
-      .portfolio__nav li a {
-        padding: 10px; } }
-    .portfolio__nav a {
-      display: block;
-      padding: 15px;
-      color: #4e4e4e;
-      font-size: 14px; }
-      .portfolio__nav a.active, .portfolio__nav a:hover {
-        color: #0891f9;
-        background-color: #FFF;
-        text-align-last: left;
-        -webkit-box-shadow: 0 0 5px 0 #0891f9;
-                box-shadow: 0 0 5px 0 #0891f9;
-        border: none; }
   .portfolio__slider {
     min-width: 400px;
     display: -webkit-box;

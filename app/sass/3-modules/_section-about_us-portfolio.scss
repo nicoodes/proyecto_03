@@ -28,37 +28,7 @@
 		padding: 0;
 
 	}
-	&__nav {
-		display: none;
-		min-width: 250px;
-		text-align: right;
-		padding: 30px;
 
-		@media screen and (max-width: 768px) {
-			
-
-			li a {
-				padding: 10px;
-			}
-		}
-
-		a {
-			display: block;
-			padding: 15px;
-			color: $txt-2;
-			font-size: $xx-small;
-
-			&.active,
-			&:hover {
-				color: $main-1;
-				background-color: #FFF;
-				text-align-last: left;
-				box-shadow: 0 0 5px 0 $main-1;
-				border: none;
-				
-			}
-		}
-	}
 
 	&__slider {
 		min-width: 400px;

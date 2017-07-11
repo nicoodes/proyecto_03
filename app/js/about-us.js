@@ -13,12 +13,12 @@ var images = [
 
 var text = [
     "Crazy app design<span>15 Dec 2016</span>",
-    "Teto app design<span>15 Dec 2016</span>",
-    "Pepe app design<span>15 Dec 2016</span>",
-    "Toto app design<span>15 Dec 2016</span>",
-    "Lili app design<span>15 Dec 2016</span>",
-    "Choto app design<span>15 Dec 2016</span>",
-    "Toti app design<span>15 Dec 2016</span>"
+    "Graphic design<span>25 Nov 2016</span>",
+    "Clean app design<span>17 Oct 2016</span>",
+    "Print design<span>01 Oct 2016</span>",
+    "Web design<span>22 Jul 2016</span>",
+    "Print design<span>11 May 2016</span>",
+    "Graphic design<span>06 Dec 2015</span>"
 ];
 
 
